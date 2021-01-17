@@ -1,0 +1,84 @@
+
+
+.logotipo {
+  width: 80px;
+}
+
+.hdos{
+   /* margin-top: -400px; */
+}
+
+
+.info-producto{
+    background: #0751AB !important;
+    padding: 10px !important;
+}
+
+.titulo{
+    margin: 40px;
+    text-align: center;
+
+}
+
+
+
+
+
+#footer{
+    padding: 80px 0; 
+    text-align: center; 
+    color: #ffffff; 
+    font-size: 19px;
+}
+
+#footer  .logo-brand{ 
+    width: 80px;
+} 
+
+#footer a{
+    color: #ffffff; 
+    
+}
+
+#footer a{
+    color: #ffffff; 
+    
+}
+
+#footer a:hover{
+    color: #C8C8C8; 
+    
+}
+
+
+#footer .list-inline .list-inline-item{
+    
+    padding: 10px 15px;
+    
+}
+
+
+@media (max-width: 575.98px) { 
+    h1{
+        font-size: 29px; line-height: normal;
+    }
+     h2{
+        font-size: 21px; line-height: normal;
+    }
+
+}
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+
+@media (min-width: 1200px) { ... }
+
