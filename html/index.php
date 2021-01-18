@@ -263,26 +263,101 @@ $sesion = $_SESSION['nombre_s'];
 </div>
 
   
-
+<!--footer-->
    
-<section id="footer" class="bg-dark">
-    <div class="container">
-     <img src="../imagenes/lo.png" class="logo-brand" alt="logo0"><span>La biblioteca del cosmos</span>
-     <ul id="baner" class="list-inline">
-         <li class="list-inline-item footer-menu"><a href="index.html">Inicio</a></li>
-          <li class="list-inline-item footer-menu"><a href="#">Videos</a></li>
-           <li class="list-inline-item footer-menu"><a href="login.html">Registrarse</a></li>
-            <li class="list-inline-item footer-menu"><a href="https://www.youtube.com/watch?v=6EBNIgkrU74&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B"></a></li>
-     </ul>
-     <ul class="list-inline">
-        <li class="list-inline-item"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-         <li class="list-inline-item"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-         <li class="list-inline-item"><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
-     </ul>
-     <small>@todos los derechos reservados</small>
-    </div>
-    
-</section>
+   <footer>
+       
+       <div class="container-footer-all">
+        
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>Mas informacion sobre la página</h1>
+
+                    <p>El objetivo principal de esta página es brindar 
+                    información acerca de distintos temas relacionados con 
+                    la astronomía , libros de divulgación científica y datos historicos de algunos personasjes más 
+                    importantes de la física.</p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <img class="icono-footer" src="../icon/facebook.png">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row">
+                        <img class="icono-footer" src="../icon/twitter.png">
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row">
+                        <img class="icono-footer" src="../icon/instagram.png">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                    <div class="row">
+                        <img class="icono-footer" src="../icon/google-plus.png">
+                        <label>Siguenos en Google Plus</label>
+                    </div>
+                    <div class="row">
+                        <img class="icono-footer" src="../icon/pinterest.png">
+                        <label>Siguenos en Pinteres</label>
+                    </div>
+
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Creadores</h1>
+                              <div class="row2">
+                        <img class="icono-footer" src="../icon/murdoc.jpg">
+                         <label>Alvin Pech Dzul</label>
+                    </div>
+                    
+                      <div class="row2">
+                        <img class="icono-footer" src="../icon/noodle.jpg">
+                         <label>Rodrigo Plaza Villanueva</label>
+                    </div>
+                    
+                      <div class="row2">
+                        <img class="icono-footer" src="../icon/2d.jpg">
+                         <label>Israel Reyes Carrillo</label>
+                    </div>
+                    
+                      <div class="row2">
+                        <img class="icono-footer" src="../icon/rusel.jpg">
+                         <label>Alexis Rosaldo Pacheco</label>
+                    </div>
+                  
+
+                    <div class="row2">
+                        <img class="icono-footer" src="../icon/contact.png">
+                         <label>BibliotecaDelCosmos@gmail.com</label>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+        
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2021 Todos los Derechos Reservados | <a href="">La Biblioteca del Cosmos</a>
+                    </div>
+
+                    <div class="information">
+                        <a href="">Informacion </a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                    </div>
+                </div>
+
+            </div>
+        
+    </footer>
 
    
    
@@ -301,10 +376,6 @@ $sesion = $_SESSION['nombre_s'];
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
    
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+   
   </body>
 </html>

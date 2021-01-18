@@ -53,7 +53,7 @@ body {
 
 .register-bg {
     background-image: url('../imagenes/imglogin.jpg');
-
+    background-size: cover; 
     background-repeat: no-repeat;
     min-height: 100vh;
 }
