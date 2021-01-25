@@ -103,7 +103,7 @@ margin-bottom: 4px;
 
 
 footer{
-    width: 100%;
+    width: 100% !important;
     background: #202020;
     color: white; 
     margin-top: 55px;

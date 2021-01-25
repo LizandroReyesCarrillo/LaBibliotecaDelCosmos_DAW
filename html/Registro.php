@@ -39,7 +39,7 @@ if( !empty($_POST['correo']) && !empty($_POST['contrasenia']) && !empty($_POST['
     }
    mysqli_close($conexion);
 }else{
-    $mensaje = 'Por favor llene todos los campos..';
+   
 }
 
 
