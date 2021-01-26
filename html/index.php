@@ -67,7 +67,7 @@ $sesion = $_SESSION['nombre_s'];
               <a class="nav-link" href="#">Videos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Libros.html">Libros</a>
+                <a class="nav-link" href="Libros.php">Libros</a>
               </li>
             <li class="nav-item">
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>
@@ -211,7 +211,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">¿Qué es una estrella?</h3>
             <p> Las estrellas son cuerpos celestes gigantes, compuestos principalmente por hidrógeno y helio, que producen luz y calor desde sus arremolinadas fundiciones nucleares.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="Estrella.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -221,7 +221,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">Los agujeros negros</h3>
             <p>Los agujeros negros son los restos fríos de antiguas estrellas, tan densas que ninguna partícula material, ni siquiera la luz, es capaz de escapar a su poderosa fuerza gravitatoria.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="AgujerosNegros.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -235,7 +235,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">¿Qué son los años luz?</h3>
             <p>Un año luz es la distancia que la luz recorre en un año terrestre. Un año luz equivale aproximadamente a 9 billones de kilómetros.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="AñosLuz.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -245,7 +245,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">Estrella de neutrones</h3>
             <p> Una estrella de neutrones nace en las últimas etapas de una estrella masiva como consecuencia de una explosión de supernova..</p>
             <p class="recio font-weight-bold"></p>
-            <a href="" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="EstrellaNeutrones.php" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -255,7 +255,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">Las Supernovas</h3>
             <p>Son estrellas que ponen fin a su evolución en una explosión cósmica masiva conocida como supernova</p>
             <p class="recio font-weight-bold"></p>
-            <a href="" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="SuperNovas.php" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -270,8 +270,8 @@ $sesion = $_SESSION['nombre_s'];
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto white wow fadeInUp" data-wow-delay="300ms">
-                        <span>our testimonials</span>
-                        <h3>See what our satisfied customers are saying about us</h3>
+                        <span></span>
+                        <h3 class="tf">Los científicos mas importantes de toda la historia.</h3>
                     </div>
                 </div>
             </div>
@@ -280,12 +280,13 @@ $sesion = $_SESSION['nombre_s'];
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t1.jpg" alt="">
+                            <img src="../imagenes/sir.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Great teachers</h5>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-                            <h6><span>Maria Smith,</span> Student</h6>
+                            <h5>Isaac Newton (1643 - 1727)</h5>
+                            <p>fue un físico, teólogo, inventor, alquimista y matemático inglés. Es autor de los Philosophiæ naturalis principia mathematica, más conocidos como los Principia, donde describe la ley de la gravitación universal y estableció las bases de la mecánica clásica mediante las leyes que llevan su nombre. Entre sus otros descubrimientos científicos destacan los trabajos sobre la naturaleza de la luz y la óptica , y en matemáticas, el desarrollo del cálculo infinitesimal.
+                            </p>
+                          
                         </div>
                     </div>
                 </div>
@@ -296,9 +297,11 @@ $sesion = $_SESSION['nombre_s'];
                             <img src="../imagenes/p01.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Easy and user friendly courses</h5>
-                            <p>Retiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
-                            <h6><span>Shawn Gaines,</span> Student</h6>
+                            <h5>Albert Einstein (1879 – 1955)</h5>
+                            <p>Es considerado el mayor científico del siglo pasado. No hay persona en la tierra que no sepa identificar a este físico judío alemán en fotografías. Fue premio Nobel de física en 1921. Su teoría de la relatividad es, probablemente, el mayor avance científico de los tiempos modernos, siendo por todos conocida su ecuación: E= mc^2.
+
+Si bien su obra es considerada como el fundamento para la creación de la bomba atómica, este científico siempre abogó por la paz.</p>
+                          
                         </div>
                     </div>
                 </div>
@@ -306,12 +309,14 @@ $sesion = $_SESSION['nombre_s'];
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="600ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t3.jpg" alt="">
+                            <img src="../imagenes/sc.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>I just love the courses here</h5>
-                            <p>Nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.</p>
-                            <h6><span>Ross Cooper,</span> Student</h6>
+                            <h5> Erwin Schrödinger (1887 – 1961)</h5>
+                            <p>Erwin Schrödinger es conocido por sus aportaciones y desarrollo de la física cuántica, mecánica cuántica y termodinámica. Recibió el premio Nobel de física en 1933.
+
+La paradoja de Schrödinger es un ejercicio mental concebido por este mismo gran científico la cual permite comprender sus interpretaciones sobre la física cuántica.</p>
+                           <!-- <h6><span></span> </h6>-->
                         </div>
                     </div>
                 </div>
@@ -319,23 +324,19 @@ $sesion = $_SESSION['nombre_s'];
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t4.jpg" alt="">
+                            <img src="../imagenes/gg0.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>One good academy</h5>
-                            <p>Vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibu lum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul. Etiam nec odio vestibulum est mat tis effic iturut magnaNec odio vestibulum est mattis effic iturut magna.</p>
-                            <h6><span>James Williams,</span> Student</h6>
+                            <h5>Galileo Galilei (1564 – 1642)</h5>
+                            <p>Galileo Galilei es el símbolo de la revolución científica, ocurrida entre los siglos XVI y XVII.
+
+Como gran personaje de su época, tocó todos los campos de conocimiento que tuvo a mano, como la astronomía, las artes y a física. Es considerado por muchos el padre de la ciencia tal como la conocemos hoy en día.</p>
+                            <h6><span></span></h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="800ms">
-                        <a href="#" class="btn academy-btn">See More</a>
-                    </div>
-                </div>
-            </div>
+        
         </div>
     </div>
 

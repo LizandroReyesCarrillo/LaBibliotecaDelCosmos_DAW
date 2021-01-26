@@ -1,3 +1,16 @@
+
+
+
+<?php
+
+
+session_start(); 
+error_reporting(0);
+
+
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +27,7 @@
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
-    
+    <link rel="stylesheet" href="../css/style.css">
    
    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -64,7 +77,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Videos</a>
@@ -165,7 +178,7 @@
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
                         <span>Tus autores favoritos</span>
-                        <h3>Los libros más populares</h3>
+                        <h3 class="tl">Los libros más populares</h3>
                     </div>
                 </div>
             </div>
@@ -267,6 +280,105 @@
                       
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(../imagenes/dise%C3%B1o.jpg);"></div>
+                    </div>
+                </div>
+                
+                
+                   <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="popular-course-content">
+                            <h5>La conexión cosmica</h5>
+                            <span><a href="https://es.wikipedia.org/wiki/Carl_Sagan">Carl Sagan</a></span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>En el libro se discuten varios temas; sin embargo, se centra en la posibilidad de la existencia de inteligencias extraterrestres, así como en la probabilidad de existencia de civilizaciones más avanzadas.</p>
+                             <!-- <button><a href="" download="../libros/tiempo.pdf" >Descargar</a></button>
+    <button><a href="javascript:popup('../libros/tiempo.pdf',1200,700)">Ver</a></button>-->
+                      <a href="" download="../libros/Carl Sagan - La conexion cosmica.pdf" > <button type="button" class="btn btn-primary">Descargar</button></a>
+                      
+                     <a href="javascript:popup('../libros/Carl Sagan - La conexion cosmica.pdf',1200,700)">  <button type="button" class="btn btn-success">Ver</button></a>
+                       
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(../imagenes/conexion.jpg);"></div>
+                    </div>
+                </div>
+                
+          
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="popular-course-content">
+                            <h5>El mundo y sus demonios.</h5>
+                           <span><a href="https://es.wikipedia.org/wiki/Carl_Sagan">Carl Sagan</a></span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>La ciencia como una luz en la oscuridad es un libro de Carl Sagan publicado en 1995 que trata de explicar el método científico y animar el uso del pensamiento crítico o escéptico.</p>
+                            
+                            
+                           <a href="" download="../libros/Carl Sagan - El mundo y sus demonios.pdf" > <button type="button" class="btn btn-primary">Descargar</button></a>
+                      
+                     <a href="javascript:popup('../libros/Carl Sagan - El mundo y sus demonios.pdf',1200,700)">  <button type="button" class="btn btn-success">Ver</button></a>
+                            
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(../imagenes/mundo.jpg);"></div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="popular-course-content">
+                            <h5>El cerebro de broca</h5>
+                     <span><a href="https://es.wikipedia.org/wiki/Carl_Sagan">Carl Sagan</a></span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>El hombre se ha planteado siempre profundos interrogantes sobre los orígenes de la conciencia, la vida sobre nuestro planeta, los primeros tiempos de la Tierra.</p>
+                            
+                         <a href="" download="../libros/Carl Sagan - El Cerebro de Broca.pdf" > <button type="button" class="btn btn-primary">Descargar</button></a>
+                      
+                     <a href="javascript:popup('../libros/Carl Sagan - El Cerebro de Broca.pdf',1200,700)">  <button type="button" class="btn btn-success">Ver</button></a>
+                        
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(../imagenes/cerebro.jpg);"></div>
+                    </div>
+                </div>
+                
+            
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="popular-course-content">
+                            <h5>Un punto azul pálido.</h5>
+                           <span><a href="https://es.wikipedia.org/wiki/Carl_Sagan">Carl Sagan</a></span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Carl Sagan prosigue el espectacular viaje científico que inició en Cosmos, el libro que hizo descender a la Tierra la magnificencia del universo, haciéndola accesible a millones de personas.</p>
+                      
+                      
+                       <a href="" download="../libros/El Gran Diseno - Stephen Hawking.pdf" > <button type="button" class="btn btn-primary">Descargar</button></a>
+                      
+                     <a href="javascript:popup('../libros/El Gran Diseno - Stephen Hawking.pdf',1200,700)">  <button type="button" class="btn btn-success">Ver</button></a>
+                      
+                      
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(../imagenes/punto.jpg);"></div>
                     </div>
                 </div>
             </div>
@@ -379,6 +491,7 @@
                         <div class="popular-course-thumb bg-img" style="background-image: url(../imagenes/punto.jpg);"></div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>

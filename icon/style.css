@@ -4,6 +4,13 @@ body {
   font-family: "Montserrat", sans-serif !important;
   font-size: 14px; }
 
+.content{
+    margin: 60px;
+}
+.subt{
+    color: #000000 !important; 
+}
+
 img{border:none}
 img:hover{opacity:0.75}
 .img-center{display:block; margin-left:auto; margin-right:auto; text-align:center}

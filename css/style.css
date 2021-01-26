@@ -310,7 +310,7 @@ img {
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 30px; }
-  .single-testimonial-area .testimonial-content p {
+  .single-testimonial-area .testimonial-content p,.tf {
     color: #ffffff; }
   .single-testimonial-area .testimonial-content h6 {
     color: #ffffff;
@@ -318,11 +318,11 @@ img {
     font-weight: 500;
     font-size: 15px; }
     .single-testimonial-area .testimonial-content h6 span {
-      color: #69bc5f; }
+      color: #3853e8; }
   .single-testimonial-area:hover .testimonial-thumb {
-    border-color: #69bc5f; }
+    border-color: #1873dd; }
   .single-testimonial-area:hover .testimonial-content h5 {
-    color: #69bc5f; }
+    color: #3853e8; }
 
 /* Top Popular Course Area CSS */
 .single-top-popular-course {
@@ -418,7 +418,7 @@ img {
       margin-left: -2px; }
     .popular-course-details-area .single-top-popular-course .popular-course-content span {
       font-size: 14px;
-      color: #61ba6d;
+      color: #3853e8;
       margin-bottom: 10px;
       display: block; }
     .popular-course-details-area .single-top-popular-course .popular-course-content .course-ratings {
@@ -442,3 +442,4 @@ img {
         max-width: 100%;
         width: 100%;
         height: 400px; } }
+.tl{color:black;}
