@@ -25,7 +25,9 @@ $sesion = $_SESSION['nombre_s'];
     <link rel="stylesheet" href="../css/estilos.css">
      <link rel="stylesheet" href="../css/botonStyle.css">
      <link rel="stylesheet" href="../css/style.css">
-   
+   <link rel="stylesheet" href="../css/btnAtajo.css">
+ 
+      
    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
@@ -34,6 +36,18 @@ $sesion = $_SESSION['nombre_s'];
      
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+   
+   <!--btn hacia arriba-->
+   <script src="../JS/jquery.scrollUp.js"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script src="../JS/jquery-1.11.1.min.js"></script>
+   <script>
+      $(function(){
+  $.scrollUp({
+      scrollImg: true
+  });
+});
+      </script>
     
    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
    
@@ -73,16 +87,14 @@ $sesion = $_SESSION['nombre_s'];
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>
             </li>
             
-            <!--  <li class="nav-item">
-              <a class="nav-link " href="" ></a>
-            </li>-->
+         
             </ul>
             
             
          <div class="dropdown">
       <a class="btn btn-warning dropdown-toggle" href="login.php" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
           <?php if(!empty($sesion) ==null): ?>
-         Usuario Invitado
+        Invitado
           <?php endif;?>
           
            <?php if(empty($sesion) ==null): ?>
@@ -123,9 +135,9 @@ $sesion = $_SESSION['nombre_s'];
                 
                                     <div class="mon">
                             
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
-</svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+                    </svg>
             
                             
                     </div>         
@@ -136,17 +148,6 @@ $sesion = $_SESSION['nombre_s'];
         </label>
        
     </div>
-
-          
-          
-          <!--
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button type="button" class="btn btn-outline-light"  type="submit">Buscar</button>
-          </form>
-        </div>
-            -->
-
       </nav>
 
    <!--carrusel -->
@@ -201,7 +202,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">¿Qué es el Big bang?</h3>
             <p>En cosmología, se entiende por Big Bang​ al principio del universo, es decir, el punto inicial en el que se formó la materia, el espacio y el tiempo.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="Bigbang.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="Bigbang.php" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -211,7 +212,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">¿Qué es una estrella?</h3>
             <p> Las estrellas son cuerpos celestes gigantes, compuestos principalmente por hidrógeno y helio, que producen luz y calor desde sus arremolinadas fundiciones nucleares.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="Estrella.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="Estrella.php" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -221,7 +222,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">Los agujeros negros</h3>
             <p>Los agujeros negros son los restos fríos de antiguas estrellas, tan densas que ninguna partícula material, ni siquiera la luz, es capaz de escapar a su poderosa fuerza gravitatoria.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="AgujerosNegros.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="AgujerosNegros.php" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -235,7 +236,7 @@ $sesion = $_SESSION['nombre_s'];
             <h3 class="text-center mb-2">¿Qué son los años luz?</h3>
             <p>Un año luz es la distancia que la luz recorre en un año terrestre. Un año luz equivale aproximadamente a 9 billones de kilómetros.</p>
             <p class="recio font-weight-bold"></p>
-            <a href="AñosLuz.html" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
+            <a href="A%C3%B1osLuz.php" class="btn btn-outline-light mb-2 btn-lg text-uppercase font-weight-bold">Leer más</a>
           </div>
         </div>
 
@@ -250,7 +251,7 @@ $sesion = $_SESSION['nombre_s'];
         </div>
 
         <div class="col-md-6 col-lg-4 mb-4 mb-md-4">
-          <img src="../imagenes/agujeros.jpg" class="img-fluid">
+          <img src="../imagenes/superid.jpg" class="img-fluid">
           <div class="info-producto bg-primary text-center text-light">
             <h3 class="text-center mb-2">Las Supernovas</h3>
             <p>Son estrellas que ponen fin a su evolución en una explosión cósmica masiva conocida como supernova</p>
@@ -283,7 +284,7 @@ $sesion = $_SESSION['nombre_s'];
                             <img src="../imagenes/sir.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Isaac Newton (1643 - 1727)</h5>
+                           <a href="https://es.wikipedia.org/wiki/Isaac_Newton"><h5>Isaac Newton (1643 - 1727)</h5></a> 
                             <p>fue un físico, teólogo, inventor, alquimista y matemático inglés. Es autor de los Philosophiæ naturalis principia mathematica, más conocidos como los Principia, donde describe la ley de la gravitación universal y estableció las bases de la mecánica clásica mediante las leyes que llevan su nombre. Entre sus otros descubrimientos científicos destacan los trabajos sobre la naturaleza de la luz y la óptica , y en matemáticas, el desarrollo del cálculo infinitesimal.
                             </p>
                           
@@ -297,7 +298,7 @@ $sesion = $_SESSION['nombre_s'];
                             <img src="../imagenes/p01.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Albert Einstein (1879 – 1955)</h5>
+                           <a href="https://es.wikipedia.org/wiki/Albert_Einstein"> <h5>Albert Einstein (1879 – 1955)</h5></a>
                             <p>Es considerado el mayor científico del siglo pasado. No hay persona en la tierra que no sepa identificar a este físico judío alemán en fotografías. Fue premio Nobel de física en 1921. Su teoría de la relatividad es, probablemente, el mayor avance científico de los tiempos modernos, siendo por todos conocida su ecuación: E= mc^2.
 
 Si bien su obra es considerada como el fundamento para la creación de la bomba atómica, este científico siempre abogó por la paz.</p>
@@ -312,7 +313,7 @@ Si bien su obra es considerada como el fundamento para la creación de la bomba 
                             <img src="../imagenes/sc.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5> Erwin Schrödinger (1887 – 1961)</h5>
+                            <a href="https://es.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger"><h5> Erwin Schrödinger (1887 – 1961)</h5></a>
                             <p>Erwin Schrödinger es conocido por sus aportaciones y desarrollo de la física cuántica, mecánica cuántica y termodinámica. Recibió el premio Nobel de física en 1933.
 
 La paradoja de Schrödinger es un ejercicio mental concebido por este mismo gran científico la cual permite comprender sus interpretaciones sobre la física cuántica.</p>
@@ -327,7 +328,7 @@ La paradoja de Schrödinger es un ejercicio mental concebido por este mismo gran
                             <img src="../imagenes/gg0.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <h5>Galileo Galilei (1564 – 1642)</h5>
+                            <a href="https://es.wikipedia.org/wiki/Galileo_Galilei"><h5>Galileo Galilei (1564 – 1642)</h5></a>
                             <p>Galileo Galilei es el símbolo de la revolución científica, ocurrida entre los siglos XVI y XVII.
 
 Como gran personaje de su época, tocó todos los campos de conocimiento que tuvo a mano, como la astronomía, las artes y a física. Es considerado por muchos el padre de la ciencia tal como la conocemos hoy en día.</p>
@@ -391,22 +392,22 @@ Como gran personaje de su época, tocó todos los campos de conocimiento que tuv
 
                     <h1>Creadores</h1>
                               <div class="row2">
-                        <img class="icono-footer" src="../icon/murdoc.jpg">
+                        <img class="icono-footer" src="../imagenes/luna.png">
                          <label>Alvin Pech Dzul</label>
                     </div>
                     
                       <div class="row2">
-                        <img class="icono-footer" src="../icon/noodle.jpg">
+                        <img class="icono-footer" src="../imagenes/satur.png">
                          <label>Rodrigo Plaza Villanueva</label>
                     </div>
                     
                       <div class="row2">
-                        <img class="icono-footer" src="../icon/2d.jpg">
+                        <img class="icono-footer" src="../imagenes/jupiter.png">
                          <label>Israel Reyes Carrillo</label>
                     </div>
                     
                       <div class="row2">
-                        <img class="icono-footer" src="../icon/rusel.jpg">
+                        <img class="icono-footer" src="../imagenes/tierra.png">
                          <label>Alexis Rosaldo Pacheco</label>
                     </div>
                   
@@ -452,7 +453,7 @@ Como gran personaje de su época, tocó todos los campos de conocimiento que tuv
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-   
+
 
    
   </body>
