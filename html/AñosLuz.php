@@ -61,10 +61,10 @@ $sesion = $_SESSION['nombre_s'];
               <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="comentarios.php">Comentarios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Libros.html">Libros</a>
+                <a class="nav-link" href="Libros.php">Libros</a>
               </li>
             <li class="nav-item">
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>
@@ -160,14 +160,14 @@ En el caso del Sol, vemos su imagen con tan solo 8 minutos de desfase. Pero en e
               <h2>Algunos temas similares <i class="fa fa-thumbs-o-up"></i></h2>
               <ul class="spost_nav wow fadeInDown animated">
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/adn.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/adn.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.clarin.com/cultura/5-teorias-sobre-el-origen-de-la-vida-como-surgio-y-evoluciono-el-ser-vivo-_0_e91XDRZ-.html">El principio de todo
 
                     5 teorías sobre el origen de la vida: ¿Cómo surgió y evolucionó el ser vivo?</a> </div>
                   </div>
                 </li>
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/marte.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/marte.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.muyinteresante.es/ciencia/articulo/la-nasa-confirma-que-hay-agua-liquida-en-marte-321443517094">La NASA confirma que hay agua líquida en Marte</a> </div>
                   </div>
                 </li>

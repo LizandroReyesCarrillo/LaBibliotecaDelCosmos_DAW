@@ -77,10 +77,10 @@ $sesion = $_SESSION['nombre_s'];
               <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="comentarios.php">Comentarios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Libros.html">Libros</a>
+                <a class="nav-link" href="Libros.php">Libros</a>
               </li>
             <li class="nav-item">
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>

@@ -11,7 +11,7 @@ $sesion = $_SESSION['nombre_s'];
 ?>
  <html lang="en">
   <head>
-    <!-- Required meta tags -->
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -61,18 +61,15 @@ $sesion = $_SESSION['nombre_s'];
               <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="comentarios.php">Comentarios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Libros.html">Libros</a>
+                <a class="nav-link" href="Libros.php">Libros</a>
               </li>
             <li class="nav-item">
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>
             </li>
-            
-            <!--  <li class="nav-item">
-              <a class="nav-link " href="" ></a>
-            </li>-->
+      
             </ul>
             
             
@@ -134,18 +131,10 @@ $sesion = $_SESSION['nombre_s'];
        
     </div>
 
-          
-          
-          <!--
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button type="button" class="btn btn-outline-light"  type="submit">Buscar</button>
-          </form>
-        </div>
-            -->
 
       </nav>
 <div>
+<!---contenido--->
 <div class="content">
      <section id="contentSection">
     <div class="row">
@@ -181,19 +170,19 @@ La estrella más débil, Alpha Centauri C, tiene una magnitud aparente de 11,05 
               <h2>Algunos temas similares <i class="fa fa-thumbs-o-up"></i></h2>
               <ul class="spost_nav wow fadeInDown animated">
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/adn.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/adn.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.clarin.com/cultura/5-teorias-sobre-el-origen-de-la-vida-como-surgio-y-evoluciono-el-ser-vivo-_0_e91XDRZ-.html">El principio de todo
 
                     5 teorías sobre el origen de la vida: ¿Cómo surgió y evolucionó el ser vivo?</a> </div>
                   </div>
                 </li>
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/marte.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/marte.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.muyinteresante.es/ciencia/articulo/la-nasa-confirma-que-hay-agua-liquida-en-marte-321443517094">La NASA confirma que hay agua líquida en Marte</a> </div>
                   </div>
                 </li>
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/luna.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/luna.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.bbc.com/mundo/noticias-54697135">a NASA confirma la existencia de agua en la superficie iluminada del satélite de la Tierra</a> </div>
                   </div>
                 </li>
@@ -209,22 +198,22 @@ La estrella más débil, Alpha Centauri C, tiene una magnitud aparente de 11,05 
             <h2><span class="amarillo">Temas relacionados.</span></h2>
             <ul class="spost_nav">
               <li>
-                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../imagenes/bigban.jpg"> </a>
+                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" src="../imagenes/bigban.jpg"> </a>
                   <div class="media-body"> <a href="Bigbang.php" class="catg_title">¿Qué es el Big bang? En cosmología, se entiende por Big Bang​ al principio del universo, es decir, el punto...</a> </div>
                 </div>
               </li>
               <li>
-                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../imagenes/agujeros.jpg"> </a>
+                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" src="../imagenes/agujeros.jpg"> </a>
                   <div class="media-body"> <a href="AgujerosNegros.php" class="catg_title"> Los agujeros negrosLos agujeros negros son los restos fríos de antiguas estrellas, tan densas que ninguna partícula material, ni...</a> </div>
                 </div>
               </li>
               <li>
-                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../imagenes/luz.jpg"> </a>
+                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" src="../imagenes/luz.jpg"> </a>
                   <div class="media-body"> <a href="AñosLuz.php" class="catg_title"> ¿Qué son los años luz? Un año luz es la distancia que la luz recorre en un año terrestre. Un año luz....</a> </div>
                 </div>
               </li>
               <li>
-                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../imagenes/neutrones.jpg"> </a>
+                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" src="../imagenes/neutrones.jpg"> </a>
                   <div class="media-body"> <a href="EstrellaNeutrones.php" class="catg_title">Estrella de neutrones
              Una estrella de neutrones nace en las últimas etapas de una estrella...</a> </div>
                 </div>
@@ -236,7 +225,7 @@ La estrella más débil, Alpha Centauri C, tiene una magnitud aparente de 11,05 
             <h2><span class="amarillo">Datos para recordar.</span></h2>
             <a class="sideAdd" href="#"><img src="../imagenes/c4.jpg" alt=""></a> </div></div></div></div>
 
-<!--footer-->
+
  
    <!--footer-->
    <div class="ftc">
@@ -338,7 +327,7 @@ La estrella más débil, Alpha Centauri C, tiene una magnitud aparente de 11,05 
 
 
    
-    <!-- Optional JavaScript; choose one of the two! -->
+ 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -63,18 +63,16 @@ $sesion = $_SESSION['nombre_s'];
               <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="comentarios.php">Comentarios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Libros.html">Libros</a>
+                <a class="nav-link" href="Libros.php">Libros</a>
               </li>
             <li class="nav-item">
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>
             </li>
             
-            <!--  <li class="nav-item">
-              <a class="nav-link " href="" ></a>
-            </li>-->
+         
             </ul>
             
             
@@ -136,15 +134,7 @@ $sesion = $_SESSION['nombre_s'];
        
     </div>
 
-          
-          
-          <!--
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button type="button" class="btn btn-outline-light"  type="submit">Buscar</button>
-          </form>
-        </div>
-            -->
+   
 
       </nav>
 <div>
@@ -156,7 +146,7 @@ $sesion = $_SESSION['nombre_s'];
           <div class="single_page">
            
             <h1>Los agujeros negros.</h1>
-            <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Wpfreeware</a> <span><i class="fa fa-calendar"></i>6:49 AM</span> <a href="#"><i class="fa fa-tags"></i>Technology</a> </div>
+             <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Enero</a> <span><i class="fa fa-calendar"></i>LaGaleriaDelCosmos</span> <a href="#"><i class="fa fa-tags"></i>2021</a> </div>
             <div class="single_page_content"> <img class="img-center" src="../imagenes/agn.png" alt="">
         <p>Los agujeros negros son los restos fríos de antiguas estrellas, tan densas que ninguna partícula material, ni siquiera la luz, es capaz de escapar a su poderosa fuerza gravitatoria.</p>
 <p>Mientras muchas estrellas acaban convertidas en enanas blancas o estrellas de neutrones, los agujeros negros representan la última fase en la evolución de enormes estrellas que fueron al menos de 10 a 15 veces más grandes que nuestro sol.
@@ -179,19 +169,19 @@ Los agujeros negros han capturado la imaginación del público y jugado un papel
               <h2>Algunos temas similares <i class="fa fa-thumbs-o-up"></i></h2>
               <ul class="spost_nav wow fadeInDown animated">
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/adn.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/adn.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.clarin.com/cultura/5-teorias-sobre-el-origen-de-la-vida-como-surgio-y-evoluciono-el-ser-vivo-_0_e91XDRZ-.html">El principio de todo
 
                     5 teorías sobre el origen de la vida: ¿Cómo surgió y evolucionó el ser vivo?</a> </div>
                   </div>
                 </li>
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/marte.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/marte.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.muyinteresante.es/ciencia/articulo/la-nasa-confirma-que-hay-agua-liquida-en-marte-321443517094">La NASA confirma que hay agua líquida en Marte</a> </div>
                   </div>
                 </li>
                 <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/luna.jpg" alt=""> </a>
+                  <div class="media"> <a class="media-left" href=""> <img src="../imagenes/luna.jpg" alt=""> </a>
                     <div class="media-body"> <a class="catg_title" href="https://www.bbc.com/mundo/noticias-54697135">La NASA confirma la existencia de agua en la superficie iluminada del satélite de la Tierra</a> </div>
                   </div>
                 </li>
@@ -224,7 +214,7 @@ Los agujeros negros han capturado la imaginación del público y jugado un papel
               </li>
               <li>
                 <div class="media wow fadeInDown"> <a href="EstrellaNeutrones.php" class="media-left"> <img alt="" src="../imagenes/neutrones.jpg"> </a>
-                  <div class="media-body"> <a href="single_page.html" class="catg_title">Estrella de neutrones
+                  <div class="media-body"> <a href="EstrellaNeutrones.php" class="catg_title">Estrella de neutrones
              Una estrella de neutrones nace en las últimas etapas de una estrella...</a> </div>
                 </div>
               </li>

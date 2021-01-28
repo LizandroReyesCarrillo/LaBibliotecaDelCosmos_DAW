@@ -1,13 +1,43 @@
+
+
 <?php
 
 
+
+    include '../DataBasePhp/conexionDB.php';
+    $mensaje = '';
 session_start(); 
 error_reporting(0);
 $sesion = $_SESSION['nombre_s'];
 
-    
+
+if( !empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['asunto'])  && !empty($_POST['comentario']) ){
+   
+    $correo = $_POST['correo'];
+    $asunto = $_POST['asunto'];
+    $nombre = $_POST['nombre'];
+     $comentario = $_POST['comentario'];
+    $insertar = "INSERT INTO comentarios(nombre,correo,asunto,comentario) VALUES ('$nombre','$correo','$asunto' ,'$comentario')"; 
+
+
+    $resultado = mysqli_query($conexion,$insertar); 
+    if(!$resultado){
+        $mensaje = 'No se ha podido realizar el registro';
+    }else{
+        $mensaje = 'Gracias por enviarnos tus dudas o comentarios';
+    }
+   mysqli_close($conexion);
+}else{
+ 
+}
+
 ?>
- <html lang="en">
+
+
+
+
+<!doctype html>
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,9 +48,9 @@ $sesion = $_SESSION['nombre_s'];
     <link rel="stylesheet" href="../css/estilos.css">
      <link rel="stylesheet" href="../css/botonStyle.css">
      <link rel="stylesheet" href="../css/style.css">
-     <link rel="stylesheet" href="../icon/style.css">
-     <link rel="stylesheet" href="../icon/theme.css">
-   
+   <link rel="stylesheet" href="../css/btnAtajo.css">
+ 
+      
    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     
@@ -29,11 +59,13 @@ $sesion = $_SESSION['nombre_s'];
      
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    
+   
+   <!--btn hacia arriba-->
+  
    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
    
    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    <title>Las supernovas.</title>
+    <title>Comentarios</title>
   </head>
   <body>
     
@@ -67,14 +99,15 @@ $sesion = $_SESSION['nombre_s'];
             <li class="nav-item">
               <a class="nav-link " href="login.php" >Iniciar Sesión</a>
             </li>
- 
+            
+         
             </ul>
             
             
          <div class="dropdown">
       <a class="btn btn-warning dropdown-toggle" href="login.php" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
           <?php if(!empty($sesion) ==null): ?>
-          Invitado
+        Invitado
           <?php endif;?>
           
            <?php if(empty($sesion) ==null): ?>
@@ -115,9 +148,9 @@ $sesion = $_SESSION['nombre_s'];
                 
                                     <div class="mon">
                             
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
-</svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+                    </svg>
             
                             
                     </div>         
@@ -128,103 +161,56 @@ $sesion = $_SESSION['nombre_s'];
         </label>
        
     </div>
-
-          
-          
-        
-
       </nav>
-<div>
-<div class="content">
-     <section id="contentSection">
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8">
-        <div class="left_content">
-          <div class="single_page">
-           
-            <h1>Las Supernovas.</h1>
-            <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Enero</a> <span><i class="fa fa-calendar"></i>LaGaleriaDelCosmos</span> <a href="#"><i class="fa fa-tags"></i>2021</a> </div>
-            <div class="single_page_content"> <img class="img-center" src="../imagenes/sn.jpg" alt="">
-      <p>Algunas estrellas se comportan como si fuera mejor quemarse que desvanecerse. Estas estrellas ponen fin a su evolución en una explosión cósmica masiva conocida como supernova
-Cuando explotan, las supernovas arrojan material al espacio a 15.000-40.000 kilómetros por segundo. Estas explosiones producen gran parte del material del universo, incluyendo elementos como el hierro, que conforma nuestro planeta e incluso a nosotros mismos. Los elementos pesados sólo se producen en las supernovas, por lo que todos nosotros llevamos en nuestros cuerpos remanentes de estas explosiones.</p>
-<p>Las supernovas añaden elementos a las nubes de polvo y gas del espacio, favoreciendo así la diversidad interestelar, y producen ondas de choque que condensan las nubes de gas y ayudan a la formación de nuevas estrellas.
-Sin embargo, pocas estrellas se convierten en supernovas. Muchas se enfrían y terminan sus días como enanas blancas y, posteriormente, como enanas negras.</p>
-<h5 class="subt">Fusión nuclear</h5>
-<p>Sin embargo, estrellas masivas, varias veces más grandes que nuestro Sol, pueden crear supernovas cuando su proceso de fusión del núcleo agota el combustible. La fusión proporciona una constante presión hacia el exterior, que coexiste en equilibrio con la atracción gravitacional hacia el interior de la propia estrella. Cuando la fusión se ralentiza, la presión cae y el núcleo de la estrella se condensa, volviéndose más caliente y denso.
-En apariencia, esas estrellas comienzan a crecer, hinchándose hasta convertirse en supergigantes rojas. Sin embargo, su núcleo sigue reduciéndose, haciendo que la formación de la supernova sea inminente.</p>
-<p>Cuando el núcleo de una estrella se contrae hasta un punto crítico, se libera una serie de reacciones nucleares.  Esta fusión evita durante un tiempo el colapso del núcleo, mientras su compuesto principal no sea el hierro, pues éste no puede mantener la fusión.
-En un microsegundo, el núcleo alcanza temperaturas de miles de millones de grados centígrados. Los átomos de hierro se contraen tanto que las fuerzas de repulsión de sus núcleos crean una contracción del núcleo que hace que la estrella explote en una supernova generando poderosas ondas de choque.</p>
 
-
-
-             
-            </div>
-          
-            <div class="related_post">
-              <h2>Algunos temas similares <i class="fa fa-thumbs-o-up"></i></h2>
-              <ul class="spost_nav wow fadeInDown animated">
-                <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/adn.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="https://www.clarin.com/cultura/5-teorias-sobre-el-origen-de-la-vida-como-surgio-y-evoluciono-el-ser-vivo-_0_e91XDRZ-.html">El principio de todo
-
-                    5 teorías sobre el origen de la vida: ¿Cómo surgió y evolucionó el ser vivo?</a> </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/marte.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="https://www.muyinteresante.es/ciencia/articulo/la-nasa-confirma-que-hay-agua-liquida-en-marte-321443517094">La NASA confirma que hay agua líquida en Marte</a> </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../imagenes/luna.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="https://www.bbc.com/mundo/noticias-54697135">a NASA confirma la existencia de agua en la superficie iluminada del satélite de la Tierra</a> </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+   <!--carrusel -->
    
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <aside class="right_content">
-          <div class="single_sidebar">
-            <h2><span class="amarillo">Temas relacionados.</span></h2>
-            <ul class="spost_nav">
-              <li>
-                <div class="media wow fadeInDown"> <a href="Bigbang.php" class="media-left"> <img alt="" src="../imagenes/bigban.jpg"> </a>
-                  <div class="media-body"> <a href="Bigbang.php" class="catg_title">¿Qué es el Big bang? En cosmología, se entiende por Big Bang​ al principio del universo, es decir, el punto...</a> </div>
-                </div>
-              </li>
-              <li>
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" src="../imagenes/estrella.jpg"> </a>
-                  <div class="media-body"> <a href="Estrella.php" class="catg_title">¿Qué es una estrella?
-            Las estrellas son cuerpos celestes gigantes, compuestos principalmente por hidrógeno y helio...</a> </div>
-                </div>
-              </li>
-              <li>
-                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../imagenes/luz.jpg"> </a>
-                  <div class="media-body"> <a href="AñosLuz.php" class="catg_title"> ¿Qué son los años luz? Un año luz es la distancia que la luz recorre en un año terrestre. Un año luz....</a> </div>
-                </div>
-              </li>
-                <li>
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" src="../imagenes/neutrones.jpg"> </a>
-                  <div class="media-body"> <a href="EstrellaNeutrones.php" class="catg_title">Estrella de neutrones
-             Una estrella de neutrones nace en las últimas etapas de una estrella...</a> </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-       
-          <div class="single_sidebar wow fadeInDown">
-            <h2><span class="amarillo">Datos para recordar.</span></h2>
-            <a class="sideAdd" href="#"><img src="../imagenes/c6.jpg" alt=""></a> </div></div></div></div>
+   <div class="titulo">
+       <h2>¿Te a gustado la página?</h2>
+      <small>dejanos un comentarios sobre tu opinión.</small>
+   </div>
+   <div class="comentarios-ct">
+      
+<form action="comentarios.php" method="POST">
+          
+<div class="segundo">
+           <div class="input-group mb-3">
+ 
+  <input name="nombre"  type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input name="correo" type="text" class="form-control" placeholder="Correo electronico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+ 
+</div>
+
+
+
+<div class="input-group mb-3">
+  <input name="asunto" type="text" class="form-control" placeholder="Asunto" aria-label="Username">
+
+
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">Escribe tu comentario</span>
+  <textarea name="comentario" class="form-control" aria-label="With textarea"></textarea>
+</div>
+</div>
+                         
+   <div class="btnc">
+    <div class="msj"> <?php if(!empty($mensaje)): ?>
+     <span> <?= $mensaje ?></span>
+      <?php endif; ?></div>
+   <button class="btn btn-primary width-100" type="submit">Enviar</button></div>
+
+</form>
+   </div>
+   
 
 <!--footer-->
- 
-   <!--footer-->
-   <div class="ftc">
-   <footer class="container-ft">
+   
+   <footer>
        
        <div class="container-footer-all">
         
@@ -268,7 +254,7 @@ En un microsegundo, el núcleo alcanza temperaturas de miles de millones de grad
 
                 </div>
 
-            <div class="colum3">
+                <div class="colum3">
 
                     <h1>Creadores</h1>
                               <div class="row2">
@@ -318,7 +304,13 @@ En un microsegundo, el núcleo alcanza temperaturas de miles de millones de grad
         
     </footer>
 
-</div>
+   
+   
+
+
+
+
+
 
 
    
@@ -327,7 +319,7 @@ En un microsegundo, el núcleo alcanza temperaturas de miles de millones de grad
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-   
+
 
    
   </body>

@@ -25,7 +25,7 @@ $sesion = $_SESSION['nombre_s'];
     <link rel="stylesheet" href="../css/estilos.css">
      <link rel="stylesheet" href="../css/botonStyle.css">
      <link rel="stylesheet" href="../css/style.css">
-   <link rel="stylesheet" href="../css/btnAtajo.css">
+   
  
       
    
@@ -38,17 +38,7 @@ $sesion = $_SESSION['nombre_s'];
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
    
    <!--btn hacia arriba-->
-   <script src="../JS/jquery.scrollUp.js"></script>
-   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-   <script src="../JS/jquery-1.11.1.min.js"></script>
-   <script>
-      $(function(){
-  $.scrollUp({
-      scrollImg: true
-  });
-});
-      </script>
-    
+  
    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
    
    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
@@ -75,10 +65,10 @@ $sesion = $_SESSION['nombre_s'];
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="comentarios.php">Comentarios</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Libros.php">Libros</a>
