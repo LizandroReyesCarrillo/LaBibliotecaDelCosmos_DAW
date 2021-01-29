@@ -169,6 +169,8 @@ if( !empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['asunt
        <h2>¿Te a gustado la página?</h2>
       <small>dejanos un comentarios sobre tu opinión.</small>
    </div>
+   
+    <?php if(!$sesion=='' || !$sesion==null) { ?>
    <div class="comentarios-ct">
       
 <form action="comentarios.php" method="POST">
@@ -206,7 +208,7 @@ if( !empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['asunt
 
 </form>
    </div>
-   
+   <?php } ?>
 
 <!--footer-->
    
